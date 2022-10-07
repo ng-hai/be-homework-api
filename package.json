@@ -1,0 +1,9 @@
+{
+  "name": "be-homework-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@vercel/node": "^2.5.22"
+  }
+}
