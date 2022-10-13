@@ -1,6 +1,10 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node"
 
 export default function cardHandler(request: VercelRequest, response: VercelResponse) {
+  if (request.method === "OPTIONS") {
+    return response.status(200).end()
+  }
+
   if (request.method !== "POST") {
     return response.status(405).end()
   }
